@@ -6,7 +6,13 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  external: ["react", "react-dom", "@mui/material", "@emotion/react", "@emotion/styled"],
+  external: [
+    "react",
+    "react-dom",
+    "@mui/material",
+    "@emotion/react",
+    "@emotion/styled",
+  ],
   treeshake: true,
   esbuildOptions(options) {
     options.banner = {
