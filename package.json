@@ -1,0 +1,50 @@
+{
+  "name": "@smata/ui-layout",
+  "version": "0.1.0",
+  "description": "Shared AppBar and Sidebar layout components for React and Next.js apps",
+  "keywords": ["react", "layout", "appbar", "sidebar", "mui"],
+  "author": "ananthan-swivel",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "prepare": "tsup"
+  },
+  "peerDependencies": {
+    "@emotion/react": ">=11",
+    "@emotion/styled": ">=11",
+    "@mui/material": ">=5",
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.18",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ananthan-swivel/shared-layout.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
