@@ -14,9 +14,4 @@ export default defineConfig({
     "@emotion/styled",
   ],
   treeshake: true,
-  esbuildOptions(options) {
-    options.banner = {
-      js: '"use client";',
-    };
-  },
 });

@@ -19,10 +19,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/use-client.mjs",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
-    "prepare": "tsup"
+    "prepare": "tsup && node scripts/use-client.mjs"
   },
   "peerDependencies": {
     "@emotion/react": ">=11",
