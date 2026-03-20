@@ -9,7 +9,6 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
-// src/components/AppLayout.tsx
 function SharedAppBar({ appTitle = "App" }) {
   return /* @__PURE__ */ jsx(AppBar, { position: "fixed", sx: { zIndex: (theme) => theme.zIndex.drawer + 1 }, children: /* @__PURE__ */ jsx(Toolbar, { children: /* @__PURE__ */ jsx(Typography, { variant: "h6", component: "div", sx: { flexGrow: 1 }, children: appTitle }) }) });
 }

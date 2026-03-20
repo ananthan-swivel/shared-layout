@@ -23,7 +23,6 @@ var List__default = /*#__PURE__*/_interopDefault(List);
 var ListItem__default = /*#__PURE__*/_interopDefault(ListItem);
 var ListItemText__default = /*#__PURE__*/_interopDefault(ListItemText);
 
-// src/components/AppLayout.tsx
 function SharedAppBar({ appTitle = "App" }) {
   return /* @__PURE__ */ jsxRuntime.jsx(AppBar__default.default, { position: "fixed", sx: { zIndex: (theme) => theme.zIndex.drawer + 1 }, children: /* @__PURE__ */ jsxRuntime.jsx(Toolbar__default.default, { children: /* @__PURE__ */ jsxRuntime.jsx(Typography__default.default, { variant: "h6", component: "div", sx: { flexGrow: 1 }, children: appTitle }) }) });
 }

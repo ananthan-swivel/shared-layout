@@ -8,4 +8,9 @@ export default defineConfig({
   clean: true,
   external: ["react", "react-dom", "@mui/material", "@emotion/react", "@emotion/styled"],
   treeshake: true,
+  esbuildOptions(options) {
+    options.banner = {
+      js: '"use client";',
+    };
+  },
 });
