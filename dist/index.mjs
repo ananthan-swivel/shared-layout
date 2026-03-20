@@ -1,14 +1,6 @@
 "use client";
-import Box2 from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Toolbar from '@mui/material/Toolbar';
-import AppBar from '@mui/material/AppBar';
-import Typography from '@mui/material/Typography';
+import { AppBar, Toolbar, Typography, Drawer, Box, List, ListItem, ListItemText, CssBaseline } from '@mui/material';
 import { jsx, jsxs } from 'react/jsx-runtime';
-import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
 
 // src/components/AppLayout.tsx
 function SharedAppBar({ appTitle = "App" }) {
@@ -37,7 +29,7 @@ function SharedSidebar({ navItems }) {
       },
       children: [
         /* @__PURE__ */ jsx(Toolbar, {}),
-        /* @__PURE__ */ jsx(Box2, { sx: { overflow: "auto" }, children: /* @__PURE__ */ jsx(List, { children: navItems.map((item) => /* @__PURE__ */ jsx(
+        /* @__PURE__ */ jsx(Box, { sx: { overflow: "auto" }, children: /* @__PURE__ */ jsx(List, { children: navItems.map((item) => /* @__PURE__ */ jsx(
           ListItem,
           {
             component: "a",
@@ -56,12 +48,12 @@ function SharedSidebar({ navItems }) {
   );
 }
 function AppLayout({ children, navItems, appTitle }) {
-  return /* @__PURE__ */ jsxs(Box2, { sx: { display: "flex" }, children: [
+  return /* @__PURE__ */ jsxs(Box, { sx: { display: "flex" }, children: [
     /* @__PURE__ */ jsx(CssBaseline, {}),
     /* @__PURE__ */ jsx(SharedAppBar, { appTitle }),
     /* @__PURE__ */ jsx(SharedSidebar, { navItems }),
     /* @__PURE__ */ jsxs(
-      Box2,
+      Box,
       {
         component: "main",
         sx: {

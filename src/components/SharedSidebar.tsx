@@ -1,12 +1,7 @@
 "use client";
 
 import React from "react";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemText from "@mui/material/ListItemText";
-import Toolbar from "@mui/material/Toolbar";
-import Box from "@mui/material/Box";
+import { Drawer, List, ListItem, ListItemText, Toolbar, Box } from "@mui/material";
 import type { SharedSidebarProps } from "../types";
 
 const DRAWER_WIDTH = 200;
